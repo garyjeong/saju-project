@@ -20,4 +20,4 @@ services:
       - TZ=Asia/Seoul
     # Port 지정
     ports:
-      - "33000:33000"
+      - "33000:3306"
