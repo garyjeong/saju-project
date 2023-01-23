@@ -1,0 +1,33 @@
+import { Timestamp } from 'typeorm';
+
+const { IncomingWebhook } = require('@slack/client');
+const webhook = new IncomingWebhook(process.env.SLACK_KEY);
+/**
+ * Slack에 에러 메시지 전송
+ * @param {*} color
+ * @param {*} text
+ * @param {*} title
+ * @param {*} time
+ */
+exports.slackMessage = async (
+  color: string,
+  text: string,
+  title: string,
+  time: Timestamp,
+): Promise<void> => {
+  await webhook.send({
+    attachments: [
+      {
+        color: color,
+        text: text,
+        fields: [
+          {
+            title: title,
+            short: false,
+          },
+        ],
+        ts: time,
+      },
+    ],
+  });
+};
