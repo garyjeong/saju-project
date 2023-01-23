@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { SajuDto } from '../../commons/dto/saju.dto';
-import { MemberDto } from '../../commons/dto/member.dto';
+import { SajuDto } from '../../common/dto/saju.dto';
+import { MemberDto } from '../../common/dto/member.dto';
 
 export class ManseDto {
   @ApiProperty({

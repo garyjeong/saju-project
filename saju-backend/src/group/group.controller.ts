@@ -13,7 +13,7 @@ import {
 import { GroupService } from './group.service';
 import { AuthGuard } from '@nestjs/passport';
 import { User } from '../entities/user.entity';
-import { Token } from 'src/commons/auth/token.decorator';
+import { Token } from '../common/auth/token.decorator';
 import { GroupRequestDto } from './dto/group.request.dto';
 import {
   GroupAddResponseDto,
@@ -22,14 +22,14 @@ import {
   GroupDeleteResponseDto,
   GroupNameListResponseDto,
 } from './dto/group.response.dto';
-import { PagenationDto } from 'src/commons/dto/pagenation.dto';
+import { PagenationDto } from '../common/dto/pagenation.dto';
 import {
   TooManyRequestExceptionDto,
   InternalServerErrorExceptionDto,
   BadRequestExceptionDto,
   UnauthorizedExceptionDto,
   ForbiddenExceptionDto,
-} from 'src/commons/dto/exception.dto';
+} from '../common/dto/exception.dto';
 import {
   ApiBadRequestResponse,
   ApiBearerAuth,

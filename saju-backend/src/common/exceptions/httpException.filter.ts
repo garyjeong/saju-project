@@ -4,7 +4,7 @@ import {
   ArgumentsHost,
   HttpException,
 } from '@nestjs/common';
-import { Response } from 'express';
+import { Request, Response } from 'express';
 import * as moment from 'moment';
 const slack = require('../slack/slack');
 

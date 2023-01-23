@@ -2,14 +2,14 @@ import { Controller, Get, UseGuards, Param } from '@nestjs/common';
 import { ManseService } from './manse.service';
 import { AuthGuard } from '@nestjs/passport';
 import { User } from '../entities/user.entity';
-import { Token } from 'src/commons/auth/token.decorator';
+import { Token } from '../common/auth/token.decorator';
 import { ManseResponseDto } from './dto/manse.response.dto';
 import {
   ForbiddenExceptionDto,
   InternalServerErrorExceptionDto,
   TooManyRequestExceptionDto,
   UnauthorizedExceptionDto,
-} from 'src/commons/dto/exception.dto';
+} from '../common/dto/exception.dto';
 import {
   ApiBearerAuth,
   ApiForbiddenResponse,

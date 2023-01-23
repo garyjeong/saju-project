@@ -8,7 +8,7 @@ import {
   ValidationPipe,
 } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
-import { Token } from 'src/commons/auth/token.decorator';
+import { Token } from '../common/auth/token.decorator';
 import { UserService } from './user.service';
 import { User } from '../entities/user.entity';
 import { SigninRequestDto, SignupRequestDto } from './dto/user.request.dto';
@@ -23,7 +23,7 @@ import {
   InternalServerErrorExceptionDto,
   TooManyRequestExceptionDto,
   UnauthorizedExceptionDto,
-} from 'src/commons/dto/exception.dto';
+} from '../common/dto/exception.dto';
 import {
   ApiBadRequestResponse,
   ApiBearerAuth,

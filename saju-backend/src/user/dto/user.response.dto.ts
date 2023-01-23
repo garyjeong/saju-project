@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { FortuneDto, SajuDto } from '../../commons/dto/saju.dto';
-import { MemberDto } from '../../commons/dto/member.dto';
+import { FortuneDto, SajuDto } from '../../common/dto/saju.dto';
+import { MemberDto } from '../../common/dto/member.dto';
 
 export class AccessTokenDto {
   @ApiProperty({

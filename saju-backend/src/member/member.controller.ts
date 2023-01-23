@@ -11,7 +11,7 @@ import {
 } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { User } from '../entities/user.entity';
-import { Token } from 'src/commons/auth/token.decorator';
+import { Token } from '../common/auth/token.decorator';
 import { MemberService } from './member.service';
 import { MemberAddRequestDto } from './dto/member.request.dto';
 import {
@@ -19,14 +19,14 @@ import {
   MemberListResponseDto,
   MemberDeleteResponseDto,
 } from './dto/member.response.dto';
-import { PagenationDto } from '../commons/dto/pagenation.dto';
+import { PagenationDto } from '../common/dto/pagenation.dto';
 import {
   BadRequestExceptionDto,
   InternalServerErrorExceptionDto,
   TooManyRequestExceptionDto,
   ForbiddenExceptionDto,
   UnauthorizedExceptionDto,
-} from 'src/commons/dto/exception.dto';
+} from '../common/dto/exception.dto';
 import {
   ApiBadRequestResponse,
   ApiBearerAuth,

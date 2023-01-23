@@ -9,8 +9,8 @@ import {
 import { MemberAddRequestDto } from './dto/member.request.dto';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
-import * as CommonConvert from '../commons/saju/birth-to-saju';
-import { MemberManse } from 'src/entities/member-manse.entity';
+import * as CommonConvert from '../common/saju/birth-to-saju';
+import { MemberManse } from '../entities/member-manse.entity';
 import * as moment from 'moment';
 
 @Injectable()

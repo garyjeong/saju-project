@@ -1,5 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { MemberListDto } from 'src/member/dto/member.response.dto';
+import { MemberListDto } from '../../member/dto/member.response.dto';
 
 export class GroupMemberAddResponseDto {
   @ApiProperty({

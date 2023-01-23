@@ -8,7 +8,7 @@ import {
   Delete,
 } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
-import { Token } from 'src/commons/auth/token.decorator';
+import { Token } from '../common/auth/token.decorator';
 import { User } from '../entities/user.entity';
 import { GroupMemberService } from './group-member.service';
 import {
@@ -16,14 +16,14 @@ import {
   GroupMemberDeleteResponseDto,
   GroupMemberListResponseDto,
 } from './dto/group-member.response.dto';
-import { PagenationDto } from 'src/commons/dto/pagenation.dto';
+import { PagenationDto } from '../common/dto/pagenation.dto';
 import {
   ConfilctIdExceptionDto,
   ForbiddenExceptionDto,
   InternalServerErrorExceptionDto,
   TooManyRequestExceptionDto,
   UnauthorizedExceptionDto,
-} from 'src/commons/dto/exception.dto';
+} from '../common/dto/exception.dto';
 import {
   ApiBearerAuth,
   ApiConflictResponse,

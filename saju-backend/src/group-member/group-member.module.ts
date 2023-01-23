@@ -4,8 +4,8 @@ import { GroupMemberController } from './group-member.controller';
 import { PassportModule } from '@nestjs/passport';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { GroupMember } from '../entities/group-member.entity';
-import { Member } from 'src/entities/member.entity';
-import { Group } from 'src/entities/group.entity';
+import { Member } from '../entities/member.entity';
+import { Group } from '../entities/group.entity';
 
 @Module({
   imports: [

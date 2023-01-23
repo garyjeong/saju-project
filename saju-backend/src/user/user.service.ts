@@ -1,5 +1,5 @@
-import * as CommonConvert from '../commons/saju/birth-to-saju';
-import * as CommonFormat from '../commons/saju/format';
+import * as CommonConvert from '../common/saju/birth-to-saju';
+import * as CommonFormat from '../common/saju/format';
 import {
   ConflictException,
   Injectable,
@@ -14,7 +14,7 @@ import { Member } from '../entities/member.entity';
 import * as bcrypt from 'bcryptjs';
 import { JwtService } from '@nestjs/jwt';
 import { Repository } from 'typeorm';
-import { MemberManse } from 'src/entities/member-manse.entity';
+import { MemberManse } from '../entities/member-manse.entity';
 
 @Injectable()
 export class UserService {

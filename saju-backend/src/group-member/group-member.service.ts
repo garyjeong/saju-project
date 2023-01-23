@@ -7,9 +7,9 @@ import {
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { GroupMember } from 'src/entities/group-member.entity';
-import { Member } from 'src/entities/member.entity';
-import { Group } from 'src/entities/group.entity';
+import { GroupMember } from '../entities/group-member.entity';
+import { Member } from '../entities/member.entity';
+import { Group } from '../entities/group.entity';
 
 @Injectable()
 export class GroupMemberService {

@@ -4,11 +4,11 @@ import { PassportModule } from '@nestjs/passport';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { User } from '../entities/user.entity';
 import { Member } from '../entities/member.entity';
-import { JwtStrategy } from '../commons/auth/jwt.strategy';
+import { JwtStrategy } from '../common/auth/jwt.strategy';
 import { UserController } from './user.controller';
 import { UserService } from './user.service';
 import * as dotenv from 'dotenv';
-import { MemberManse } from 'src/entities/member-manse.entity';
+import { MemberManse } from '../entities/member-manse.entity';
 dotenv.config();
 
 @Module({

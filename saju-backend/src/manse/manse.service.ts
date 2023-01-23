@@ -5,9 +5,9 @@ import {
   Injectable,
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Member } from 'src/entities/member.entity';
+import { Member } from '../entities/member.entity';
 import { Repository } from 'typeorm';
-import * as CommonFormat from '../commons/saju/format';
+import * as CommonFormat from '../common/saju/format';
 
 @Injectable()
 export class ManseService {
